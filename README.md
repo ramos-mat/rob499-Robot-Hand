@@ -51,3 +51,4 @@ There are two possible sketches that can be ran, depending on the set up used.
 - Arduino sketch that uses servo motor driver (PCA9685).
 - Arduino sketch that is connected directly to ESP32 board.
 
+For more information such as the set-up of the arduino, make sure to check out the full documentation guide.
