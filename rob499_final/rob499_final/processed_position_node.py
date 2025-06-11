@@ -16,7 +16,7 @@ class ProcessedPositionNode(Node):
     def listener_callback(self, msg):
         label = input('Label this position (e.g., position_1): ')
         data = {'angles': list(msg.angles)}
-        path = os.path.expanduser(f'~/.ros/ROB499_FINAL/{label}.json')
+        path = os.path.expanduser(f'~/.ros/rob499_final/{label}.json')
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w') as f:
             json.dump(data, f)
