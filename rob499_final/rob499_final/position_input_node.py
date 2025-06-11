@@ -18,7 +18,7 @@ class PositionInputNode(Node):
             return
 
         data = {'angles': angles}
-        path = os.path.expanduser(f'~/.ros/ROB499_FINAL/{folder}')
+        path = os.path.expanduser(f'~/.ros/rob499_final/{folder}')
         os.makedirs(path, exist_ok=True)
         filename = datetime.now().strftime('%Y%m%d%H%M%S') + '.json'
         with open(os.path.join(path, filename), 'w') as f:
