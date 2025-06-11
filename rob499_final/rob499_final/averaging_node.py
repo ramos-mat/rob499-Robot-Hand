@@ -12,7 +12,7 @@ class AveragingNode(Node):
 
     def prompt_folder(self):
         folder = input('Enter folder to average (e.g., position_1_raw): ')
-        path = os.path.expanduser(f'~/.ros/ROB499_FINAL/{folder}')
+        path = os.path.expanduser(f'~/.ros/rob499_final/{folder}')
         if not os.path.exists(path):
             self.get_logger().info('Folder does not exist.')
             return
