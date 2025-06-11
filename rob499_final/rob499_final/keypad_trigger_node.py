@@ -15,7 +15,7 @@ class KeypadTriggerNode(Node):
         if not key.isdigit():
             return
         filename = f'position_{key}.json'
-        path = os.path.expanduser(f'~/.ros/ROB499_FINAL/{filename}')
+        path = os.path.expanduser(f'~/.ros/rob499_final/{filename}')
         if not os.path.exists(path):
             self.get_logger().info(f'{filename} not found.')
             return
